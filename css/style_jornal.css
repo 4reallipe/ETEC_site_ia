@@ -6,6 +6,7 @@
   --vinho: #7A1F1F;
   --linha: #201B14;
   --largura-maxima: 1180px;
+  --azul: #1E3A8A;
 }
 
 * { box-sizing: border-box; }
@@ -177,7 +178,7 @@ summary::-webkit-details-marker { display: none; }
   float: left;
   line-height: 0.82;
   padding: 4px 8px 0 0;
-  color: var(--vinho);
+  color: var(--azul);
 }
 
 cite { font-style: italic; }
@@ -223,7 +224,7 @@ cite { font-style: italic; }
   font-size: 1.05rem;
   margin: 0 0 10px;
   padding-bottom: 8px;
-  border-bottom: 2px solid var(--vinho);
+  border-bottom: 2px solid var(--azul);
 }
 
 .linha-do-tempo {
@@ -244,7 +245,7 @@ cite { font-style: italic; }
   display: block;
   font-family: 'Old Standard TT', Georgia, serif;
   font-weight: 700;
-  color: var(--vinho);
+  color: var(--azul);
 }
 
 .perfis { margin: 0; }
@@ -279,6 +280,18 @@ cite { font-style: italic; }
   gap: 16px;
 }
 
+.proxima {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--tinta);
+  border: 1px solid var(--tinta);
+  padding: 6px 14px;
+  font-family: 'Old Standard TT', Georgia, serif;
+  font-size: 0.85rem;
+  transition: background 0.15s ease, color 0.15s ease;
+}
 .rodape__titulo {
   font-family: 'Playfair Display', Georgia, serif;
   margin: 0 0 4px;
