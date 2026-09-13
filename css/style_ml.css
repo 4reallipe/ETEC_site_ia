@@ -1,0 +1,105 @@
+:root {
+    --fundo-menu: #a8d8f0;
+    --fundo-card: #f0f8ff;
+    --texto: #1a3a5c;
+    --texto-secundario: #4a7a9b;
+    --primaria: #2196F3;
+    --secundaria: #64B5F6;
+    --destaque: #00BCD4;
+    --sucesso: #4FC3F7;
+    --alerta: #81D4FA;
+    --erro: #0288D1;
+    --borda: #B3E5FC;
+    --header-fundo: #E1F5FE;
+    --fonte: 'Trebuchet MS', Tahoma, Verdana, sans-serif;
+    --raio: 0;
+}
+
+body {
+    margin: 0;
+    background-image: url("/Img/fundosegundario.png");
+    background-color: #c9cbcc;
+    color: var(--texto);
+    font-family: var(--fonte);
+}
+
+header {
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px outset #B3E5FC;
+    background: linear-gradient(180deg,
+            #E1F5FE 0%,
+            #B3E5FC 30%,
+            #81D4FA 50%,
+            #B3E5FC 70%,
+            #E1F5FE 100%);
+    color: #0A0A0A;
+    font-family: Impact, 'Trebuchet MS', sans-serif;
+    box-shadow: inset 0 1px 0 #FFF, 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+    font-size: 28px;
+    color: #0A0A0A;
+    text-shadow: 1px 1px 0 #81D4FA;
+    margin: 0;
+}
+
+header .sub {
+    font-family: 'Courier New', monospace;
+    font-size: 11px;
+    color: #4FC3F7;
+    background: #0A0A0A;
+    padding: 3px 8px;
+    display: inline-block;
+    margin-top: 8px;
+}
+
+#menu {
+    background: linear-gradient(180deg, #B3E5FC, #81D4FA);
+    color: #0A0A0A;
+    height: 60px;
+    border-radius: 5px;
+    margin: 10px;
+    border: 2px outset #B3E5FC;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6), 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 12px;
+}
+
+#menu a {
+    color: #0A0A0A;
+    text-decoration: none;
+    display: block;
+    padding: 6px 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+#menu a:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+#menu figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 5px;
+    width: fit-content;
+}
+
+.voltar {
+    height: 30px;
+}
+
+.botaomenu {
+    background: linear-gradient(180deg, #b5b9bb, #666d70);
+    color: #0A0A0A;
+    height: 40px;
+    border-radius: 5px;
+    margin: 10px;
+    border: 2px outset #B3E5FC;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6), 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 12px;
+    
+}
