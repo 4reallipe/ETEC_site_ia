@@ -1,105 +1,533 @@
-:root {
-    --fundo-menu: #a8d8f0;
-    --fundo-card: #f0f8ff;
-    --texto: #1a3a5c;
-    --texto-secundario: #4a7a9b;
-    --primaria: #2196F3;
-    --secundaria: #64B5F6;
-    --destaque: #00BCD4;
-    --sucesso: #4FC3F7;
-    --alerta: #81D4FA;
-    --erro: #0288D1;
-    --borda: #B3E5FC;
-    --header-fundo: #E1F5FE;
-    --fonte: 'Trebuchet MS', Tahoma, Verdana, sans-serif;
-    --raio: 0;
+/* =========================
+   CONFIGURAÇÃO GERAL
+   ========================= */
+
+* {
+    box-sizing: border-box;
 }
 
 body {
     margin: 0;
     background-image: url("/Img/fundosegundario.png");
     background-color: #c9cbcc;
-    color: var(--texto);
-    font-family: var(--fonte);
+    color: #1a3a5c;
+    font-family: "Trebuchet MS", Tahoma, Verdana, sans-serif;
 }
 
-header {
-    margin: 10px;
+
+/* =========================
+   CABEÇALHO
+   ========================= */
+
+#cabecalho {
+    position: relative;
+    width: 95%;
+    height: 120px;
+    margin: 0 auto 10px;
     padding: 20px;
-    border-radius: 5px;
     border: 2px outset #B3E5FC;
-    background: linear-gradient(180deg,
-            #E1F5FE 0%,
-            #B3E5FC 30%,
-            #81D4FA 50%,
-            #B3E5FC 70%,
-            #E1F5FE 100%);
-    color: #0A0A0A;
-    font-family: Impact, 'Trebuchet MS', sans-serif;
-    box-shadow: inset 0 1px 0 #FFF, 0 2px 4px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    background: linear-gradient(to bottom,
+            #1a3a5c,
+            #4FC3F7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-header h1 {
-    font-size: 28px;
-    color: #0A0A0A;
-    text-shadow: 1px 1px 0 #81D4FA;
+
+/* =========================
+   TÍTULO
+   ========================= */
+
+.machinelearning {
     margin: 0;
+    font-family: Impact, "Trebuchet MS", sans-serif;
+    font-size: 70px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow:
+        1px 1px 0 #0b2942,
+        2px 2px 0 #4FC3F7;
 }
 
-header .sub {
-    font-family: 'Courier New', monospace;
-    font-size: 11px;
-    color: #4FC3F7;
-    background: #0A0A0A;
-    padding: 3px 8px;
-    display: inline-block;
-    margin-top: 8px;
+
+/* =========================
+   CÉREBRO
+   ========================= */
+
+.braingift {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    transform: translateY(-50%);
 }
+
+.braingift img {
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+
+
+/* =========================
+   ROBÔ
+   ========================= */
+
+.robotgif {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    transform: translateY(-50%);
+}
+
+.robotgif img {
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+
+
+/* =========================
+   ROBÔ DA CAIXA
+   ========================= */
+
+.robo_caixa {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.robo_caixa img {
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+
+.robo_caixa h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+
+/* =========================
+   MENU
+   ========================= */
 
 #menu {
-    background: linear-gradient(180deg, #B3E5FC, #81D4FA);
-    color: #0A0A0A;
+    width: 95%;
     height: 60px;
-    border-radius: 5px;
-    margin: 10px;
+    margin: 0 auto;
     border: 2px outset #B3E5FC;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6), 0 2px 4px rgba(0, 0, 0, 0.1);
-    font-size: 12px;
-}
-
-#menu a {
+    overflow: hidden;
     color: #0A0A0A;
-    text-decoration: none;
-    display: block;
-    padding: 6px 10px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    background: linear-gradient(180deg,
+            #848788 0%,
+            #B3E5FC 30%,
+            #c7d6dd 50%,
+            #95cae7 70%,
+            #818e94 100%);
+    display:flex;
 }
 
-#menu a:hover {
-    background: rgba(255, 255, 255, 0.4);
-}
 
-#menu figure {
+/* =========================
+   BOTÃO DO MENU
+   ========================= */
+.avancar{
+    
+
+
+
+}
+.botaomenu {
+    height: 100%;
+    margin-left: 10px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    margin: 0;
-    padding: 5px;
-    width: fit-content;
+    justify-content: flex-start;
+    gap: 10px;
 }
+
+.botaomenu p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #0b2942;
+}
+
+
+/* =========================
+   BOTÃO VOLTAR
+   ========================= */
 
 .voltar {
+    width: auto;
     height: 30px;
+    display: block;
 }
 
-.botaomenu {
-    background: linear-gradient(180deg, #b5b9bb, #666d70);
-    color: #0A0A0A;
-    height: 40px;
-    border-radius: 5px;
-    margin: 10px;
+.avancar {
+    width: auto;
+    height: 30px;
+    display: block;
+}
+/* =========================
+   CONTEÚDO
+   ========================= */
+
+#conteudo {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    /* Impede que as caixas estiquem juntas */
+    gap: 5px;
+}
+
+
+/* =========================
+   SEÇÃO PRINCIPAL
+   ========================= */
+
+.secao {
+    flex: 1;
+    padding: 20px;
     border: 2px outset #B3E5FC;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6), 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #E1F5FE;
+    color: #1a3a5c;
+}
+
+.secao h2 {
+    margin-top: 0;
+    color: #0b2942;
+}
+
+.secao p {
+    font-size: 14px;
+    color: #1a3a5c;
+}
+
+
+/* =========================
+   TÍTULO DA SEÇÃO
+   ========================= */
+
+.secaotitulo {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.secaotitulo>img {
+    width: 100px;
+    height: auto;
+    display: block;
+}
+
+
+/* =========================
+   ÁREA DO TÍTULO
+   ========================= */
+
+.tituloarea {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.titulosecao {
+    margin: 0;
+    padding: 0;
+    font-family: Impact, "Trebuchet MS", sans-serif;
+    font-size: 40px;
+    font-weight: normal;
+    color: #0b2942;
+    text-shadow: 1px 1px 0 #B3E5FC;
+}
+
+
+/* =========================
+   ESTRELAS
+   ========================= */
+
+.star {
+    margin: 0;
+    padding: 0;
+}
+
+.star img {
+    width: 500px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+
+/* =========================
+   COMPUTADOR
+   ========================= */
+
+.computer {
+    margin: 0;
+    padding: 0;
+}
+
+.computer img {
+    width: 130px;
+    height: 100px;
+    display: block;
+}
+
+
+/* =========================
+   SEPARADORES
+   ========================= */
+
+.separador {
+    margin: 20px 0;
+    padding: 0;
+}
+
+.separador img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* =========================
+   PESQUISAS
+   ========================= */
+
+.pesquisa {
+    margin: 20px 0;
+}
+
+.pesquisa h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding: 5px 8px;
+    font-family: Impact, "Trebuchet MS", sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    color: #FFFFFF;
+    background: linear-gradient(180deg,
+            #31536a,
+            #78a8c1,
+            #29485c);
+    border: 2px outset #B3E5FC;
+    text-shadow: 1px 1px 0 #172b3a;
+}
+
+.pesquisa h4 {
+    margin-bottom: 5px;
+    color: #0b2942;
+    font-size: 16px;
+}
+
+.pesquisa p {
+    line-height: 1.5;
+}
+
+.pesquisa ul {
+    line-height: 1.7;
+    color: #1a3a5c;
+}
+
+
+/* =========================
+   AVISO
+   ========================= */
+
+.aviso {
+    margin: 20px 0;
+    padding: 10px;
+    text-align: center;
+    font-family: "Lucida Console", monospace;
+    font-weight: bold;
+    color: #FFFF00;
+    background-color: #172b3a;
+    border: 2px inset #B3E5FC;
+}
+
+
+/* =========================
+   CURIOSIDADE
+   ========================= */
+
+.curiosidade {
+    margin-top: 25px;
+    padding: 15px;
+    background: #c7e5f2;
+    border: 3px double #31536a;
+    text-align: center;
+}
+
+.curiosidade h3 {
+    margin-top: 0;
+    font-family: Impact, "Trebuchet MS", sans-serif;
+    color: #0033CC;
+}
+
+
+/* =========================
+   GIF LATERAL
+   ========================= */
+
+.giflateral {
+    width: 130px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+
+/* =========================
+   GLOBO
+   ========================= */
+
+.globo {
+    width: 200px;
+    height: 200px;
+    margin: 40px auto 20px;
+    /* Centraliza o globo e dá espaço acima e abaixo */
+    padding: 0;
+    overflow: hidden;
+}
+
+.globo img {
+    width: 200px;
+    height: 200px;
+    display: block;
+}
+
+
+/* =========================
+   RODAPÉ DA SEÇÃO
+   ========================= */
+
+.rodapesecao {
+    margin-top: 20px;
+    height: 100px;
+    padding: 15px;
+    text-align: center;
+    border: 2px inset #B3E5FC;
+    background: #172b3a;
+    color: #E1F5FE;
     font-size: 12px;
-    
+}
+
+.rodapesecao p {
+    margin: 5px;
+    color: #4FC3F7;
+}
+
+
+/* =========================
+   CAIXA LATERAL
+   ========================= */
+
+.caixa_lateral {
+    width: 350px;
+    min-height: 0;
+    padding: 15px;
+    border: 2px solid #B3E5FC;
+    background: linear-gradient(180deg,
+            #172b3a 0%,
+            #31536a 20%,
+            #78a8c1 45%,
+            #aedbee 50%,
+            #6d9bb2 55%,
+            #29485c 80%,
+            #101c26 100%);
+    color: #f0fee1;
+    box-shadow:
+        inset 2px 2px 0 #E1F5FE,
+        inset -2px -2px 0 #1a3a5c;
+}
+
+.caixa_lateral h2 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 0 #1a3a5c;
+}
+
+.caixa_lateral h3 {
+    color: #f3e9ee;
+    font-size: 16px;
+}
+
+.caixa_lateral p {
+    font-size: 18px;
+    color: #e5ff00;
+    line-height: 1.5;
+}
+
+.caixa_lateral hr {
+    border: 0;
+    border-top: 2px dotted #B3E5FC;
+    margin: 20px 0;
+}
+
+
+/* =========================
+   LINKS
+   ========================= */
+
+a {
+    color: #0033CC;
+}
+
+a:visited {
+    color: #551A8B;
+}
+
+a:hover {
+    color: #FFFF00;
+}
+
+
+/* =========================
+   RODAPÉ PRINCIPAL
+   ========================= */
+
+#rodape {
+    width: 95%;
+    margin: 0 auto 20px;
+    text-align: center;
+    height: 100px;
+    color: #E1F5FE;
+    background: linear-gradient(180deg,
+            #172b3a 0%,
+            #31536a 20%,
+            #78a8c1 45%,
+            #c7e5f2 50%,
+            #6d9bb2 55%,
+            #29485c 80%,
+            #101c26 100%);
+    border: 2px outset #B3E5FC;
+}
+
+#rodape p {
+    margin: 0;
+    padding-top: 35px;
+    font-size: 12px;
+    color: #E1F5FE;
 }
