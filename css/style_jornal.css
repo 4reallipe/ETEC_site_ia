@@ -1,6 +1,6 @@
 :root {
-  --papel: #EFE9DA;
-  --papel-caixa: #E7E0CC;
+  --papel: #ede8d0;
+  --papel-caixa: #ede8d0;
   --tinta: #201B14;
   --tinta-suave: #4A4238;
   --vinho: #7A1F1F;
@@ -22,7 +22,7 @@ body {
 .cabecalho {
   max-width: var(--largura-maxima);
   margin: 0 auto;
-  padding: 18px 24px 0;
+  padding: 18px 24px;
 }
 
 .cabecalho__barra-superior,
@@ -38,8 +38,8 @@ body {
 }
 
 .cabecalho__barra-inferior {
-  border-top: 2px solid var(--linha);
-  border-bottom: 4px double var(--linha);
+  border-top: 1px solid var(--linha);
+  border-bottom: 1px solid var(--linha);
   padding: 6px 0;
   margin-top: 14px;
 }
@@ -98,12 +98,6 @@ main {
 details {
   border-top: 6px double var(--linha);
   padding-top: 18px;
-}
-
-summary {
-  cursor: pointer;
-  list-style: none;
-  margin-bottom: 8px;
 }
 
 summary::-webkit-details-marker { display: none; }
