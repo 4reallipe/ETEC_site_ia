@@ -22,11 +22,10 @@ body {
 .cabecalho {
   max-width: var(--largura-maxima);
   margin: 0 auto;
-  padding: 18px 24px;
+  padding: 18px 24px 0;
 }
 
-.cabecalho__barra-superior,
-.cabecalho__barra-inferior {
+.cabecalho__barra-superior{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -37,36 +36,35 @@ body {
   color: var(--tinta-suave);
 }
 
-.cabecalho__barra-inferior {
-  border-top: 1px solid var(--linha);
-  border-bottom: 1px solid var(--linha);
-  padding: 6px 0;
-  margin-top: 14px;
-}
-
 .masthead {
+  border-top: 4.99px double var(--linha);
   text-align: center;
   font-family: 'Playfair Display', Georgia, serif;
   font-weight: 900;
-  font-size: clamp(2.6rem, 7vw, 5rem);
-  margin: 8px 0 4px;
-  letter-spacing: 0.01em;
+  font-size: clamp(40px, 10vw, 110px);
+  margin: 5px 0 -20px;
+  letter-spacing: -0.04em;
+  line-height: 1.10;
+  padding-top: 7px;
 }
 
 .subtitulo-jornal {
   text-align: center;
   font-style: italic;
   color: var(--tinta-suave);
-  margin: 0 0 10px;
-  font-size: 1.05rem;
+  font-size: clamp(0.8rem, 2vw, 1.05rem);
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  border-bottom: 4.99px double var(--linha);
 }
 
 .menu {
   max-width: var(--largura-maxima);
-  margin: 0 auto;
+  margin: -20px auto 0;
   padding: 10px 24px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  gap: 20px;
 }
 
 .menu__link {
@@ -108,13 +106,13 @@ summary::-webkit-details-marker { display: none; }
   font-size: 0.78rem;
   letter-spacing: 0.12em;
   color: var(--vinho);
-  margin: 0 0 6px;
+  margin: 0 0 -6px;
 }
 
 .titulo {
   font-family: 'Playfair Display', Georgia, serif;
   font-weight: 700;
-  font-size: clamp(1.9rem, 4.2vw, 3rem);
+  font-size: clamp(1.9rem, 4.7vw, 4rem);
   line-height: 1.1;
   margin: 0 0 10px;
 }
