@@ -4,66 +4,77 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Principais IAs - Gazeta Tecnológica</title>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,700;0,900;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style_jornal.css"/>
 </head>
 <body>
-
   <header class="cabecalho">
-    <div class="cabecalho__barra-superior" role="region" aria-label="Informações da Edição">
+    <div class="cabecalho__barra-superior">
       <span>Edição Especial</span>
       <span>Notícias Diárias</span>
-      <time datetime="2026">São Paulo, 1951</time>
+      <time datetime="1951">São Paulo, 1951</time>
     </div>
-    
     <h1 class="masthead">A Tribuna Nacional</h1>
     <p class="subtitulo-jornal">“Informação, notícias e atualidades”</p>
   </header>
+
   <nav class="menu" aria-label="Navegação principal">
-    <a href="Pesquisas.tar.gz" download class="menu__link" alt="Baixar Pesquisa">
-      <img src="Img/download (1).png" alt="Ícone de download">
+    <a href="Pesquisas.tar.gz" download class="menu__link">
+      <img src="Img/download (1).png" alt="">
       Baixar Pesquisa
     </a>
-    <a href="ML.HTML" class="proxima" alt="Ir para a próxima página">
-       viajar para os anos 2000
+    <a href="ML.HTML" class="menu__link">
+      Viajar para os anos 2000
     </a>
   </nav>
-
+  
   <main>
     <article>
-        <header class="cabecalho-materia">
-          <p class="editoria">Especial / Tecnologia</p>
-          <h2 class="titulo">MÁQUINAS QUE PENSAM? A NOVA FRONTEIRA DA CIÊNCIA</h2>
-        </header>
-
-        <p class="linha-fina">
-          "Eu proponho considerar a questão 'As máquinas podem pensar?'" <br> - Alan Turing, 1950.
+      <header class="cabecalho-materia">
+        <p class="editoria">
+          Especial / Tecnologia
         </p>
+        <h2 class="titulo">
+          MÁQUINAS QUE <mark class="sublinhado">PENSAM?</mark>
+        </h2>
+      </header>
 
-        <div class="ficha-materia">
-          Por <span class="ficha-materia__local">Redação</span>
-          <span class="ficha-materia__separador">/</span> 
-          Publicado em <time class="ficha-materia__local" datetime="2026-03-04">Especial Digital</time>
-        </div>
-        
-        <div class="Pesquisa"> 
-          <div class="corpo-materia">
-            <section class="primeiro-paragrafo">
-              <h3>Os Primeiros Passos</h3>
+      <p class="linha-fina">
+        "Eu proponho considerar a questão:&nbsp; <mark class="sublinhado">'As máquinas podem pensar?'"</mark><br>
+        - Alan Turing, 1950.
+      </p>
+      <p class="ficha-materia">
+        Por <span class="ficha-materia__local">Redação</span>
+        <span class="ficha-materia__separador">/</span>
+        Publicado em <time class="ficha-materia__local" datetime="2026-03-04">Especial Digital</time>
+      </p>
+
+      <div class="Pesquisa">
+        <article colspan="2">
               <p>
-                A história da inteligência artificial (IA) remonta à década de 1950, quando os primeiros pesquisadores começaram a explorar a ideia de criar máquinas capazes de simular a inteligência humana. O termo "inteligência artificial" foi cunhado em 1956 por John McCarthy durante a conferência de Dartmouth, que é considerada o ponto de partida oficial do campo da IA. Nos anos seguintes, houve avanços significativos na pesquisa em IA, com o desenvolvimento de algoritmos e técnicas para resolver problemas específicos.
+                <b><i>DARTMOUTH, ESTADOS UNIDOS.</i></b> Uma nova e curiosa possibilidade começa a chamar a atenção dos cientistas: <q>será possível construir uma máquina capaz de realizar tarefas que até hoje dependem exclusivamente da inteligência humana?</q><br>
+
+                A pergunta pode parecer saída de um romance futurista, mas já ocupa laboratórios e universidades. Matemáticos, engenheiros e especialistas em computação começam a investigar se o raciocínio humano pode, de alguma maneira, ser reproduzido por uma máquina.
+
+                A chamada Inteligência Artificial ainda é uma ciência jovem. Porém, as ideias que deram origem a ela são muito mais antigas.
               </p>
-            </section>
+            </article>
+        <div class="corpo-materia">
+          <section class="primeiro-paragrafo" aria-labelledby="primeiros-passos">
+            <h3 id="primeiros-passos">Os Primeiros Passos</h3>
+            <p id="primeiro_paragrafo">Em 1943, os cientistas Warren McCulloch e Walter Pitts publicaram um importante trabalho sobre o funcionamento lógico das redes neurais. O estudo apresentou um modelo matemático inspirado no funcionamento dos neurônios e tornou-se uma das bases para o desenvolvimento posterior das redes neurais artificiais.</p>
+            <p>Poucos anos depois, o matemático britânico Alan Turing levantaria uma questão que entraria para a história da computação: seriam as máquinas capazes de demonstrar comportamento inteligente?</p>
+            <p>Em 1950, Turing publicou o artigo <cite>Computing Machinery and Intelligence</cite>, no qual apresentou o chamado “jogo da imitação”, posteriormente conhecido como Teste de Turing. A proposta procurava substituir a difícil pergunta “as máquinas podem pensar?” por um teste baseado no comportamento observado durante uma conversa.</p>
+          </section>
 
             <figure class="citacao-destaque">
-              <blockquote>
-                "A IA não é mais uma promessa distante; ela molda o tecido do nosso cotidiano moderno."
-              </blockquote>
-              <figcaption class="citacao-destaque__fonte">Canais da Computação</figcaption>
-            </figure>
+              <p>
+                “Todo aspecto da aprendizagem ou qualquer outra característica da inteligência pode, em princípio, ser descrito com tanta precisão que uma máquina pode ser construída para simulá-lo.”
+              </p>
+              <cite class="citacao-destaque__fonte">— Projeto de Pesquisa de Verão de Dartmouth, 1956</cite>
+            </figure><br><br><br>
                 
             <section class="segundo-paragrafo">
               <h3>O Inverno e a Retomada</h3>
@@ -80,55 +91,38 @@
             </section>
           </div>
 
-          <aside class="caixa-lateral" aria-label="Informações complementares">
-            <section class="caixa">
-              <h3 class="caixa__titulo">Marcos Históricos</h3>
-              <ul class="linha-do-tempo">
-                <li>
-                  <time class="linha-do-tempo__ano" datetime="1950">1950</time>
-                  Teste de Turing proposto por Alan Turing.
-                </li>
-                <li>
-                  <time class="linha-do-tempo__ano" datetime="1956">1956</time>
-                  Conferência de Dartmouth (nascimento do termo).
-                </li>
-                <li>
-                  <time class="linha-do-tempo__ano" datetime="1997">1997</time>
-                  Deep Blue vence o campeão mundial de xadrez.
-                </li>
-              </ul>
-            </section>
-
-            <section class="caixa">
-              <h3 class="caixa__titulo">Pioneiros</h3>
-              <dl class="perfis">
-                <div class="perfis__item">
-                  <dt>John McCarthy</dt>
-                  <dd>Cunhou o termo Inteligência Artificial.</dd>
-                </div>
-                <div class="perfis__item">
-                  <dt>Alan Turing</dt>
-                  <dd>Pai da computação e pioneiro em testes de inteligência.</dd>
-                </div>
-              </dl>
-            </section>
-          </aside>
-        </div>
+        <aside class="caixa-lateral" aria-label="Informações complementares">
+          <section class="caixa" aria-labelledby="marcos-historicos">
+            <h3 id="marcos-historicos" class="caixa__titulo">Marcos Históricos</h3>
+            <ul class="linha-do-tempo">
+              <li><time class="linha-do-tempo__ano" datetime="1950">1950</time> Teste de Turing proposto por Alan Turing.</li>
+              <li><time class="linha-do-tempo__ano" datetime="1956">1956</time> Conferência de Dartmouth (nascimento do termo).</li>
+              <li><time class="linha-do-tempo__ano" datetime="1997">1997</time> Deep Blue vence o campeão mundial de xadrez.</li>
+            </ul>
+          </section>
+          <section class="caixa" aria-labelledby="pioneiros">
+            <h3 id="pioneiros" class="caixa__titulo">Pioneiros</h3>
+            <dl class="perfis">
+              <div class="perfis__item"><dt>John McCarthy</dt><dd>Cunhou o termo Inteligência Artificial.</dd></div>
+              <div class="perfis__item"><dt>Alan Turing</dt><dd>Pai da computação e pioneiro em testes de inteligência.</dd></div>
+            </dl>
+          </section>
+        </aside>
+      </div>
     </article>
   </main>
 
   <footer class="rodape">
     <div>
-      <h3 class="rodape__titulo">Gazeta Tecnológica</h3>
-      <p>Desenvolvido para fins educacionais e de pesquisa.</p>
+      <h2 class="rodape__titulo">A Tribuna Nacional &copy;</h2>
+      <p>Desenvolvido para fins educacionais e de pesquisa como parte do trabalho interdisciplinar da ETEC de Santa Isabel.</p>
     </div>
     <address class="rodape__endereco">
-      <a href="mailto:etecprojetoinfo@gmail.com" aria-label="Enviar e-mail para etecprojinfo@gmail.com" class="rodape__contato">
-        <img src="Img/email.svg" alt="" aria-hidden="true">
-        etecprojinfo@gmail.com
+      <a href="mailto:etecprojetoinfo@gmail.com" class="rodape__contato">
+        <img src="Img/email.svg" alt="">
+        etecprojetoinfo@gmail.com
       </a>
     </address>
   </footer>
-
 </body>
 </html>

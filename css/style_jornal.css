@@ -5,14 +5,15 @@
   --tinta-suave: #4A4238;
   --vinho: #7A1F1F;
   --linha: #201B14;
-  --largura-maxima: 1180px;
-  --azul: #1E3A8A;
+  --largura-maxima: 2000px;
+  --azul: #0a2163;
+  --marrom: #322012;
 }
 
 * { box-sizing: border-box; }
 
 body {
-  margin: 0;
+  margin: 2px 0;
   background: var(--papel);
   color: var(--tinta);
   font-family: 'PT Serif', 'Old Standard TT', Georgia, serif;
@@ -22,7 +23,7 @@ body {
 .cabecalho {
   max-width: var(--largura-maxima);
   margin: 0 auto;
-  padding: 18px 24px 0;
+  padding: 18px 24px 15px;
 }
 
 .cabecalho__barra-superior{
@@ -41,8 +42,8 @@ body {
   text-align: center;
   font-family: 'Playfair Display', Georgia, serif;
   font-weight: 900;
-  font-size: clamp(40px, 10vw, 110px);
-  margin: 5px 0 -20px;
+  font-size: clamp(40px, 8vw, 110px);
+  margin: 5px 0 -0.3em;
   letter-spacing: -0.04em;
   line-height: 1.10;
   padding-top: 7px;
@@ -52,39 +53,46 @@ body {
   text-align: center;
   font-style: italic;
   color: var(--tinta-suave);
-  font-size: clamp(0.8rem, 2vw, 1.05rem);
+  font-size: clamp(0.8rem, 1.6vw, 1.05rem);
   padding-bottom: 15px;
-  margin-bottom: 20px;
   border-bottom: 4.99px double var(--linha);
 }
 
 .menu {
   max-width: var(--largura-maxima);
   margin: -20px auto 0;
-  padding: 10px 24px;
+  padding: 10px 30px 2px;
   display: flex;
-  justify-content: center;
   gap: 20px;
+  justify-content: center;
 }
 
 .menu__link {
   display: inline-flex;
-  align-items: center;
-  gap: 8px;
+  gap: 1em;
   text-decoration: none;
+  font-style: italic;
+  box-shadow: 2.5px 2.5px 0.5px 0.1px var(--tinta);
   color: var(--tinta);
   border: 1px solid var(--tinta);
-  padding: 6px 14px;
+  padding: 0.375em 1em;
   font-family: 'Old Standard TT', Georgia, serif;
-  font-size: 0.85rem;
-  transition: background 0.15s ease, color 0.15s ease;
+  font-size: clamp(0.5rem, 2vw, 0.85rem);
+  transition: background 0.45s ease, color 0.20s ease;
+  margin: -0.5em 0 1em;
 }
 
-.menu__link img { width: 16px; height: 16px; }
+.menu__link img { 
+  width: 0.9em; 
+  height: 0.9em; 
+}
 
 .menu__link:hover {
+  text-decoration: underline;
+  box-shadow: 2.5px 2.5px 0.5px 0.1px #635543;
   background: var(--tinta);
   color: var(--papel);
+  transition: background 0.45s ease, color 0.20s ease;
 }
 
 main {
@@ -106,15 +114,18 @@ summary::-webkit-details-marker { display: none; }
   font-size: 0.78rem;
   letter-spacing: 0.12em;
   color: var(--vinho);
-  margin: 0 0 -6px;
+  margin: 10px 0 -1.5em;
 }
 
 .titulo {
   font-family: 'Playfair Display', Georgia, serif;
-  font-weight: 700;
-  font-size: clamp(1.9rem, 4.7vw, 4rem);
-  line-height: 1.1;
-  margin: 0 0 10px;
+  font-weight: 850;
+  font-size: clamp(2rem, 6.5vw, 8rem);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 2px;
+  line-height: 1.2;
+  margin: 10px 0 17px;
 }
 
 .linha-fina {
@@ -123,11 +134,17 @@ summary::-webkit-details-marker { display: none; }
   color: var(--tinta-suave);
   border-left: 3px solid var(--vinho);
   padding-left: 14px;
-  margin: 0 0 18px;
+  margin: 0 0 25px;
+  font-size: clamp(0.8rem, 2.6vw, 1.05rem);
   max-width: 62ch;
 }
 
-.ficha-materia {
+.cabecalho-materia {
+  font-size: clamp(1rem, 2.5vw, 1.20rem);
+  margin-bottom: -0.4em;
+}
+
+.ficha-materia{
   font-family: 'Old Standard TT', Georgia, serif;
   font-size: 0.85rem;
   text-transform: uppercase;
@@ -135,16 +152,28 @@ summary::-webkit-details-marker { display: none; }
   color: var(--tinta-suave);
   border-top: 1px solid var(--linha);
   border-bottom: 1px solid var(--linha);
-  padding: 6px 0;
+  padding: 10px 0;
   margin-bottom: 22px;
+  justify-content: center;
+  text-decoration: none;
+  width: 100%;
 }
 
-.ficha-materia__local { font-weight: 700; color: var(--tinta); }
-.ficha-materia__separador { margin: 0 6px; }
+.ficha-materia__local { 
+  font-weight: 700; 
+  color: var(--tinta); 
+}
+.ficha-materia__separador { 
+  margin: 0 6px; 
+}
+
+b{
+  font-weight: 600;
+}
 
 .Pesquisa {
   display: grid;
-  grid-template-columns: minmax(0, 2.2fr) minmax(240px, 1fr);
+  grid-template-columns: 3;
   gap: 40px;
   align-items: start;
 }
@@ -154,16 +183,16 @@ summary::-webkit-details-marker { display: none; }
 }
 
 @media (min-width: 780px) {
-  .corpo-materia { column-count: 2; column-gap: 32px; }
+  .corpo-materia { column-count: 2; column-gap: 30px; }
 }
 
 .corpo-materia section p {
   margin: 0 0 1em;
   font-size: 1.02rem;
-  hyphens: auto;
+  line-height: 1.3;
 }
 
-.primeiro-paragrafo p::first-letter {
+.primeiro-paragrafo #primeiro_paragrafo::first-letter {
   font-family: 'Playfair Display', Georgia, serif;
   font-weight: 900;
   font-size: 3.6em;
@@ -176,26 +205,25 @@ summary::-webkit-details-marker { display: none; }
 cite { font-style: italic; }
 
 .citacao-destaque {
-  break-inside: avoid;
-  margin: 6px 0 22px;
-  padding: 14px 0;
-  border-top: 2px solid var(--linha);
-  border-bottom: 2px solid var(--linha);
+  margin: 0 0 5px;
+  padding: 2px 0px;
   font-family: 'Playfair Display', Georgia, serif;
-  font-style: italic;
-  font-size: 1.3rem;
-  line-height: 1.4;
-  text-align: center;
+  font-size: clamp(0.9rem, 200vw, 1.1rem);
+  line-height: 1.3;
+  text-align: block;
 }
 
 .citacao-destaque__fonte {
   display: block;
   margin-top: 10px;
+  margin-bottom: 20px;
   font-family: 'Old Standard TT', Georgia, serif;
   font-style: normal;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
+  font-weight: 700;
+  font-variant: small-caps;
+  justify-content: center;
   color: var(--tinta-suave);
 }
 
@@ -205,6 +233,9 @@ cite { font-style: italic; }
   gap: 24px;
 }
 
+.sublinhado{
+  background: rgba(168, 168, 25, 0.26);
+}
 .caixa {
   background: var(--papel-caixa);
   border: 1px solid var(--linha);
@@ -299,6 +330,15 @@ cite { font-style: italic; }
   text-decoration: none;
   color: var(--tinta);
   font-size: 0.9rem; 
+  transition: background 0.45s ease, color 0.20s ease;
 }
 
-.rodape__contato img { width: 18px; height: 18px; }
+.rodape__contato:hover { 
+  text-decoration: underline; 
+  background: var(--tinta);
+  color: white;
+}
+
+.rodape__contato img { 
+  width: 18px; height: 18px; 
+}
