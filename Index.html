@@ -13,36 +13,38 @@
   <header class="cabecalho">
     <div class="cabecalho__barra-superior">
       <span>Edição Especial</span>
-      <span>Notícias Diárias</span>
-      <time datetime="1951">São Paulo, 1951</time>
+      <span>Arquivo Especial</span>
+      <time datetime="2026-09-27">São Paulo, 1960</time>
     </div>
-    <h1 class="masthead">A Tribuna Nacional</h1>
+    <h1 class="masthead">Jornal do Amanhã</h1>
     <p class="subtitulo-jornal">“Informação, notícias e atualidades”</p>
   </header>
 
-  <nav class="menu" aria-label="Navegação principal">
-    <a href="Pesquisas.tar.gz" download class="menu__link">
-      <img src="Img/download (1).png" alt="">
-      Baixar Pesquisa
-    </a>
-    <a href="ML.HTML" class="menu__link">
-      Viajar para os anos 2000
-    </a>
-  </nav>
-  
   <main>
     <article>
       <header class="cabecalho-materia">
         <p class="editoria">
           Especial / Tecnologia
         </p>
+        <nav class="menu" aria-label="Navegação principal">
+          <details class="menu__disclosure">
+            <summary class="menu__trigger"><img src="Img/menu-burger.png" height="13px" width="15px"></span>Menu</summary>
+            <div class="menu__painel">
+              <a href="Pesquisas.tar.gz" download class="menu__link">
+                <img src="Img/download (1).png" alt="">
+                Baixar Pesquisa
+              </a>
+              <a href="ML.HTML" class="menu__link">Viajar para os anos 2000</a>
+            </div>
+          </details>
+        </nav>
         <h2 class="titulo">
           MÁQUINAS QUE <mark class="sublinhado">PENSAM?</mark>
         </h2>
       </header>
 
       <p class="linha-fina">
-        "Eu proponho considerar a questão:&nbsp; <mark class="sublinhado">'As máquinas podem pensar?'"</mark><br>
+        "Eu proponho considerar a questão:&nbsp; <mark class="sublinhado">'As máquinas podem pensar?'</mark>"<br>
         - Alan Turing, 1950.
       </p>
       <p class="ficha-materia">
@@ -52,59 +54,87 @@
       </p>
 
       <div class="Pesquisa">
-        <article colspan="2">
-              <p>
-                <b><i>DARTMOUTH, ESTADOS UNIDOS.</i></b> Uma nova e curiosa possibilidade começa a chamar a atenção dos cientistas: <q>será possível construir uma máquina capaz de realizar tarefas que até hoje dependem exclusivamente da inteligência humana?</q><br>
-
-                A pergunta pode parecer saída de um romance futurista, mas já ocupa laboratórios e universidades. Matemáticos, engenheiros e especialistas em computação começam a investigar se o raciocínio humano pode, de alguma maneira, ser reproduzido por uma máquina.
-
-                A chamada Inteligência Artificial ainda é uma ciência jovem. Porém, as ideias que deram origem a ela são muito mais antigas.
-              </p>
-            </article>
+        <div class="abertura-materia">
+          <div class="abertura-materia__texto">
+            <p><strong>DARTMOUTH, ESTADOS UNIDOS.</strong> Uma pergunta antes restrita à ficção chega aos laboratórios: <q>uma máquina pode aprender, resolver problemas e usar a linguagem?</q> Nos anos 1950, matemáticos e engenheiros começam a investigar se essas capacidades poderiam ser descritas em instruções para um computador.</p>
+            <p>Em 1943, Warren McCulloch e Walter Pitts propuseram um modelo lógico inspirado nos neurônios. Em 1950, Alan Turing sugeriu avaliar a inteligência de uma máquina por suas respostas numa conversa escrita. Eram caminhos diferentes para uma mesma questão: como transformar aspectos do raciocínio em algo que uma máquina pudesse executar?</p>
+            <p>O debate ganhou força em 1956, quando pesquisadores se reuniram no Dartmouth College para estudar aprendizagem, linguagem e resolução de problemas. Os computadores ainda eram enormes e limitados, mas uma nova área de pesquisa começava a tomar forma: a Inteligência Artificial.</p>
+          </div>
+          <figure class="abertura-materia__imagem">
+            <img src="Img/turing.jpg" alt="Retrato de Alan Turing, matemático britânico.">
+            <figcaption>Alan Turing propôs um teste para investigar se uma máquina poderia imitar uma conversa humana.</figcaption>
+          </figure>
+        </div>
         <div class="corpo-materia">
           <section class="primeiro-paragrafo" aria-labelledby="primeiros-passos">
-            <h3 id="primeiros-passos">Os Primeiros Passos</h3>
-            <p id="primeiro_paragrafo">Em 1943, os cientistas Warren McCulloch e Walter Pitts publicaram um importante trabalho sobre o funcionamento lógico das redes neurais. O estudo apresentou um modelo matemático inspirado no funcionamento dos neurônios e tornou-se uma das bases para o desenvolvimento posterior das redes neurais artificiais.</p>
-            <p>Poucos anos depois, o matemático britânico Alan Turing levantaria uma questão que entraria para a história da computação: seriam as máquinas capazes de demonstrar comportamento inteligente?</p>
-            <p>Em 1950, Turing publicou o artigo <cite>Computing Machinery and Intelligence</cite>, no qual apresentou o chamado “jogo da imitação”, posteriormente conhecido como Teste de Turing. A proposta procurava substituir a difícil pergunta “as máquinas podem pensar?” por um teste baseado no comportamento observado durante uma conversa.</p>
+            <h3 id="primeiros-passos">De Romances e Mitos para os Laboratórios</h3>
+            <p id="primeiro_paragrafo">Muito antes dos computadores, o homem já imaginava a criação de seres artificiais. Na Grécia Antiga, mitos falavam de estátuas, autômatos e criaturas capazes de executar tarefas.</p>
+            <p>Não se tratava ainda de ciência, mas essas histórias mostram que o desejo de criar algo capaz de imitar o homem acompanha a humanidade há séculos. Com o avanço da matemática, da lógica e, mais tarde, dos computadores, esse antigo sonho começou a ganhar bases científicas.</p>
           </section>
 
-            <figure class="citacao-destaque">
-              <p>
-                “Todo aspecto da aprendizagem ou qualquer outra característica da inteligência pode, em princípio, ser descrito com tanta precisão que uma máquina pode ser construída para simulá-lo.”
-              </p>
-              <cite class="citacao-destaque__fonte">— Projeto de Pesquisa de Verão de Dartmouth, 1956</cite>
-            </figure><br><br><br>
-                
-            <section class="segundo-paragrafo">
-              <h3>O Inverno e a Retomada</h3>
-              <p>
-                No entanto, o progresso foi lento devido às limitações computacionais da época e à falta de dados disponíveis para treinar os modelos. Durante as décadas de 1970 e 1980, a IA passou por um período conhecido como "inverno da IA", caracterizado por expectativas não atendidas e cortes de financiamento. No entanto, a pesquisa continuou em áreas como redes neurais e aprendizado de máquina. A partir dos anos 1990, com o aumento do poder computacional e a disponibilidade de grandes conjuntos de dados, a IA começou a ganhar impulso novamente.
-              </p>
-            </section>
-                
-            <section class="terceiro-paragrafo">
-              <h3>A Era do Deep Learning</h3>
-              <p>
-                O desenvolvimento de algoritmos mais sofisticados, como redes neurais profundas (deep learning), levou a avanços significativos em áreas como reconhecimento de imagem, processamento de linguagem natural e jogos. Nos últimos anos, a IA tem se tornado cada vez mais presente em nossas vidas, com aplicações em assistentes virtuais, carros autônomos, diagnósticos médicos e muito mais. A pesquisa continua avançando rapidamente, com novas técnicas e abordagens sendo exploradas para tornar a IA ainda mais poderosa e útil.
-              </p>
-            </section>
-          </div>
+          <section class="segundo-paragrafo">
+            <h3>O Cérebro Transformado em Cálculos</h3>
+            <p>Em 1943, Warren McCulloch e Walter Pitts apresentaram um modelo matemático inspirado no funcionamento dos neurônios. A proposta procurava representar, por meio da lógica e de cálculos, como unidades semelhantes às células nervosas poderiam produzir certos processos.</p>
+            <p>Era um passo pequeno, mas decisivo: uma questão ligada à biologia e à filosofia começava também a ser investigada pela matemática e pela computação.</p>
+          </section>
+
+          <section class="terceiro-paragrafo">
+            <h3>Um Matemático Faz uma Pergunta Incômoda</h3>
+            <p>Em 1950, o matemático britânico Alan Turing publicou <cite>Computing Machinery and Intelligence</cite>. Em vez de definir o que seria “pensar”, propôs observar se, numa conversa escrita, uma máquina poderia ser confundida com uma pessoa.</p>
+            <p>A experiência ficou conhecida como jogo da imitação. Mais tarde chamada de Teste de Turing, ela não criou uma máquina inteligente, mas tornou concreta uma discussão que influenciaria gerações de pesquisadores.</p>
+            <p class="pergunta-destaque">“As máquinas podem pensar?”</p>
+          </section>
+
+          <section class="quarto-paragrafo">
+            <h3>1956: Nasce um Novo Campo da Ciência</h3>
+            <p><strong>HANOVER, NEW HAMPSHIRE.</strong> Pesquisadores reuniram-se no Dartmouth College para discutir se máquinas poderiam aprender, resolver problemas, usar linguagem e tomar decisões.</p>
+            <p>John McCarthy, Marvin Minsky, Nathaniel Rochester e Claude Shannon estavam entre os nomes envolvidos. O encontro ficou conhecido como <cite>Dartmouth Summer Research Project on Artificial Intelligence</cite>, e foi nesse contexto que a expressão “Inteligência Artificial” ganhou nome e lugar nos laboratórios.</p>
+            <p>Nos anos 1950 e 1960, computadores enormes e limitados já executavam programas de lógica e resolução de problemas. A máquina inteligente ainda era uma promessa, mas o homem começava a ensinar seu raciocínio às máquinas.</p>
+          </section>
+
+          <figure class="imagem-materia imagem-materia--paisagem">
+            <img src="Img/ibm-704-1957.jpg" alt="Duas operadoras trabalham diante de um computador IBM 704 no centro de pesquisa Langley, em 1957.">
+            <figcaption>O IBM 704 era usado em cálculos de pesquisa aeronáutica. Foto de NACA/NASA, 1957, em <a href="https://commons.wikimedia.org/wiki/File:IBM_704_Computer_Operations_(LRC-1957-B701_P-05391).tiff" target="_blank" rel="noopener">domínio público</a>.</figcaption>
+          </figure>
+
+          <figure class="citacao-destaque">
+            <p>“Todo aspecto da aprendizagem ou qualquer outra característica da inteligência pode, em princípio, ser descrito com tanta precisão que uma máquina pode ser construída para simulá-lo.”</p>
+            <cite class="citacao-destaque__fonte">Proposta de Dartmouth, John McCarthy e colaboradores, 1955</cite>
+          </figure>
+
+          <section class="quinto-paragrafo">
+            <h3>E Depois? Uma Ideia que Não Parou em 1956</h3>
+            <p>Em 1997, o computador Deep Blue, desenvolvido pela IBM, derrotou o campeão mundial de xadrez Garry Kasparov. Quase duas décadas depois, em 2016, o sistema AlphaGo venceu Lee Sedol no jogo de Go, demonstrando avanços em programas capazes de aprender estratégias complexas.</p>
+            <figure class="imagem-materia imagem-materia--retrato">
+              <img src="Img/deep-blue-museu.jpg" alt="O computador de xadrez Deep Blue em exposição no Computer History Museum.">
+              <figcaption>O Deep Blue em exposição no Computer History Museum. Foto de James Gardner, licenciada sob <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a>, via <a href="https://commons.wikimedia.org/wiki/File:Deep_Blue.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>.</figcaption>
+            </figure>
+            <p>Hoje, computadores realizam tarefas que pareciam pertencer exclusivamente ao homem. A pergunta de Turing, porém, continua ecoando: quão longe uma máquina pode chegar?</p>
+            <p><strong>A história da Inteligência Artificial estava apenas começando.</strong></p>
+          </section>
+        </div>
 
         <aside class="caixa-lateral" aria-label="Informações complementares">
           <section class="caixa" aria-labelledby="marcos-historicos">
             <h3 id="marcos-historicos" class="caixa__titulo">Marcos Históricos</h3>
             <ul class="linha-do-tempo">
-              <li><time class="linha-do-tempo__ano" datetime="1950">1950</time> Teste de Turing proposto por Alan Turing.</li>
-              <li><time class="linha-do-tempo__ano" datetime="1956">1956</time> Conferência de Dartmouth (nascimento do termo).</li>
-              <li><time class="linha-do-tempo__ano" datetime="1997">1997</time> Deep Blue vence o campeão mundial de xadrez.</li>
+              <li><time class="linha-do-tempo__ano" datetime="1943">1943</time><span>McCulloch e Pitts apresentam um modelo matemático inspirado nos neurônios.</span></li>
+              <li><time class="linha-do-tempo__ano" datetime="1950">1950</time><span>Alan Turing propõe o teste que leva seu nome.</span></li>
+              <li><time class="linha-do-tempo__ano" datetime="1956">1956</time><span>Pesquisadores se reúnem em Dartmouth e dão nome ao novo campo.</span></li>
+              <li><span class="linha-do-tempo__ano">1950–60</span><span>Surgem programas pioneiros de lógica e resolução de problemas.</span></li>
+              <li><time class="linha-do-tempo__ano" datetime="1997">1997</time><span>Deep Blue derrota o campeão mundial Garry Kasparov.</span></li>
+              <li><time class="linha-do-tempo__ano" datetime="2016">2016</time><span>AlphaGo vence Lee Sedol no jogo de Go.</span></li>
             </ul>
           </section>
           <section class="caixa" aria-labelledby="pioneiros">
             <h3 id="pioneiros" class="caixa__titulo">Pioneiros</h3>
             <dl class="perfis">
-              <div class="perfis__item"><dt>John McCarthy</dt><dd>Cunhou o termo Inteligência Artificial.</dd></div>
-              <div class="perfis__item"><dt>Alan Turing</dt><dd>Pai da computação e pioneiro em testes de inteligência.</dd></div>
+              <div class="perfis__item"><dt>Warren McCulloch e Walter Pitts</dt><dd>Modelaram matematicamente redes inspiradas nos neurônios.</dd></div>
+              <div class="perfis__item"><dt>Alan Turing</dt><dd>Matemático britânico e autor do jogo da imitação.</dd></div>
+              <div class="perfis__item"><dt>John McCarthy</dt><dd>Criou o termo “Inteligência Artificial” e organizou o encontro de Dartmouth.</dd></div>
+              <div class="perfis__item"><dt>Marvin Minsky</dt><dd>Pioneiro da pesquisa em inteligência artificial.</dd></div>
+              <div class="perfis__item"><dt>Nathaniel Rochester</dt><dd>Pesquisador e participante do projeto de Dartmouth.</dd></div>
+              <div class="perfis__item"><dt>Claude Shannon</dt><dd>Matemático e pioneiro da teoria da informação.</dd></div>
             </dl>
           </section>
         </aside>
@@ -115,7 +145,7 @@
   <footer class="rodape">
     <div>
       <h2 class="rodape__titulo">A Tribuna Nacional &copy;</h2>
-      <p>Desenvolvido para fins educacionais e de pesquisa como parte do trabalho interdisciplinar da ETEC de Santa Isabel.</p>
+      <p>Desenvolvido para fins educacionais como parte do trabalho interdisciplinar da ETEC de Santa Isabel.</p>
     </div>
     <address class="rodape__endereco">
       <a href="mailto:etecprojetoinfo@gmail.com" class="rodape__contato">
