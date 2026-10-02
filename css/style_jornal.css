@@ -1,12 +1,12 @@
 :root {
-  --papel: #f3eee3;
+  --papel: #e6e6e6;
   --papel-caixa: #f3eedf;
   --tinta: #201b14;
   --tinta-suave: #5b5144;
   --vinho: #661e17;
   --linha: #292319;
   --largura-maxima: 2000px;
-  --azul: #34483c;
+  --azul: #125c66;
   --marrom: #322012;
 }
 
@@ -110,11 +110,17 @@ body {
   color: var(--tinta);
   border: 1px solid var(--tinta);
   box-shadow: 2.5px 2.5px 0.5px 0.1px var(--tinta);
-  padding: 0.375em 1em;
+  padding: 0.25em 0.65em;
   font-family: 'Old Standard TT', Georgia, serif;
-  font-size: clamp(0.5rem, 1.2vw, 0.85rem);
+  font-size: clamp(0.9rem, 1.1vw, 0.95rem);
   font-style: italic;
   transition: background 0.2s ease, color 0.2s ease, box-shadow 0.45s ease;
+}
+
+.menu__trigger img {
+  width: 1em;
+  height: 1em;
+  object-fit: contain;
 }
 
 .menu__trigger::-webkit-details-marker {
@@ -210,15 +216,13 @@ summary::-webkit-details-marker { display: none; }
   font-weight: 850;
   font-size: clamp(2.4rem, 6vw, 5rem);
   line-height: 1.06;
-  margin: 0 0 8px;
+  margin: 0 0 0.06em;
 }
 
 .linha-fina {
   font-style: italic;
   font-size: 1.15rem;
   color: var(--tinta-suave);
-  border-left: 3px solid var(--vinho);
-  padding-left: 14px;
   margin: 0 0 20px;
   font-size: clamp(0.8rem, 2.6vw, 1.05rem);
   max-width: 62ch;
@@ -489,7 +493,6 @@ cite { font-style: italic; }
   }
   .cabecalho-materia .titulo { grid-column: 1; grid-row: 3; }
   .menu__link { font-size: 0.82rem; }
-  .menu__trigger { font-size: 0.82rem; }
   main { padding: 20px 18px 36px; }
   .Pesquisa { grid-template-columns: 1fr; gap: 22px; }
   .abertura-materia {

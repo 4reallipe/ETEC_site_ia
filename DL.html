@@ -13,8 +13,8 @@
         <div class="topo">
             <h1>Deep Learning</h1>
             <div class="container-pesquisa">
-                <input type="text" placeholder="Pesquisar..." class="barra-pesquisa">
-                <button class="botao-pesquisa">Pesquisar</button>
+                <input type="text" placeholder="Pesquisar..." class="barra-pesquisa" aria-label="Pesquisar">
+                <button class="botao-pesquisa" type="button">Pesquisar</button>
             </div>
         </div>
         <p class="frase-banner">Desbloqueando o poder dos dados para prever o futuro da inovação.</p>
@@ -26,11 +26,11 @@
         <a href="Pesquisas.tar.gz" download>Baixar Pesquisa (.docx)</a>
     </nav>
 
-    <div class="layout">
+    <main class="layout">
         <!-- Card Lateral com Resumo e Recursos -->
-        <aside class="caixa">
+        <aside class="caixa" aria-labelledby="recursos-deep-learning">
             <section class="conteudo-caixa">
-                <h2 class="titulo-caixa">Principais Recursos</h2>
+            <h2 class="titulo-caixa" id="recursos-deep-learning">Principais Recursos</h2>
                 <hr>
                 <ul>
                     <li>
@@ -50,9 +50,9 @@
         </aside>
 
         <!-- Área Principal de Conteúdo -->
-        <main class="conteudo">
-            <section>
-                <h2>Definição de deep learning:</h2>
+        <div class="conteudo">
+            <section aria-labelledby="definicao-deep-learning">
+            <h2 id="definicao-deep-learning">Definição de deep learning:</h2>
                 <hr>
                 <p>“Deep learning” ou aprendizado profundo é um subconjunto do machine learning, em que criam redes
                     neurais artificias, são algoritmos modelados para o funcionamento do código como um cérebro humano,
@@ -69,12 +69,12 @@
                     várias fontes de dados e analisam esses dados em tempo real, sem a necessidade de um humano o
                     ajudando.</p>
             </section>
-        </main>
+        </div>
 
         <figure class="imagem">
-            <img src="Img/rede.png" alt="Conceitos de IA e ML" width="200px">
+            <img src="Img/rede.png" alt="Conceitos de IA e ML" width="200">
         </figure>
-    </div>
+    </main>
 
     <footer class="rodape">
         <p>&copy; 2010 - Guia de Machine Learning</p>
